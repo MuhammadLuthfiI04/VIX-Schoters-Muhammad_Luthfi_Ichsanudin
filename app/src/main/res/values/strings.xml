@@ -18,5 +18,6 @@
     <string name="company">Company</string>
     <string name="link">Link</string>
     <string name="image_profile">Image Profile</string>
+    <string name="news_app">APP</string>
 
 </resources>

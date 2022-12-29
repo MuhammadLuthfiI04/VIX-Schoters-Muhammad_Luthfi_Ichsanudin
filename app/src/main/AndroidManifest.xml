@@ -18,6 +18,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp">
         <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ui.activity.profile.ProfileActivity"
             android:exported="false">
             <meta-data
@@ -28,7 +35,7 @@
             android:name=".ui.activity.detailnews.DetailNewsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.main.MainActivity"
+            android:name=".ui.activity.splashscreen.SplashScreenActivity"
             android:exported="true"
             android:launchMode="singleTask">
             <intent-filter>
