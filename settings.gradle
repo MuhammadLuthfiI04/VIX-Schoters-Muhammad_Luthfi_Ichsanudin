@@ -1,19 +1,11 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-        mavenCentral()
-        jcenter()
-    }
-}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        jcenter()
-        maven { url 'https://jitpack.io' }
+        jcenter() //
+        maven { url 'https://jitpack.io' }// Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "VIX-Schoters-Muhammad_Luthfi_Ichsanudin"
+rootProject.name = "NewsApp"
 include ':app'

@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">VIX-Schoters-Muhammad_Luthfi_Ichsanudin</string>
+    <string name="app_name">NewsApp</string>
+    <string name="top_headlines">Top Headlines</string>
+    <string name="browse">Browse</string>
+    <string name="share">Share</string>
+    <string name="save">Read later</string>
+    <string name="listen">Listen</string>
+    <string name="warning">Try Again!</string>
+    <string name="news_title">Title</string>
+    <string name="headline">Headline</string>
+    <string name="name">name</string>
+    <string name="more">More</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="image_article">Image article</string>
+
 </resources>

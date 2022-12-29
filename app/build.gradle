@@ -1,28 +1,40 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
     id 'kotlin-kapt'
 }
+apply plugin: 'kotlin-android'
 
 android {
     namespace 'com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin'
     compileSdk 33
 
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin"
-        minSdk 23
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "API_KEY", "\"b9907a40b16949de8ec8d43da9d7ab67\"")
+        buildConfigField("String", "API_KEY", "\"1efa6954c58d43bdbd3c818e51cc6f19\"")
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+            shrinkResources false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -38,25 +50,36 @@ android {
 dependencies {
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
 
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.viewpager2:viewpager2:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
-    implementation "androidx.activity:activity-ktx:1.6.0"
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.6.1'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    implementation "androidx.room:room-runtime:2.4.3"
-    kapt "androidx.room:room-compiler:2.4.3"
+    // View Pager
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
 
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+
+    // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+    // Room
+    kapt "androidx.room:room-compiler:2.4.3"
+    implementation "androidx.room:room-runtime:2.4.3"
+    implementation "androidx.room:room-ktx:2.4.3"
+
+    // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     implementation 'com.squareup.picasso:picasso:2.71828'
 
