@@ -6,10 +6,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.BuildConfig
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.ui.activity.main.MainActivity
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.NewsResponse
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api.NewsApi
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.News
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api.ApiConfig
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.NewsResponse
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api.news.NewsApi
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.News
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api.news.ApiConfigNews
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
@@ -49,8 +49,8 @@ class NewsRepository {
 
     fun getNewsApiCall(category: String?): MutableLiveData<List<NewsResponse>> {
         val newsList = MutableLiveData<List<NewsResponse>>()
-        val call = ApiConfig.getInstance().create(NewsApi::class.java)
-            .getNews("id", category, BuildConfig.API_KEY)
+        val call = ApiConfigNews.getInstance().create(NewsApi::class.java)
+            .getNews("id", category, BuildConfig.API_KEY_NEWS)
         call.enqueue(object : Callback<News> {
             override fun onResponse(
                 call: Call<News>,

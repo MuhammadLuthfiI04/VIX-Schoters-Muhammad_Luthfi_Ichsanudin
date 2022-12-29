@@ -2,7 +2,6 @@ package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.ui.activi
 
 import android.content.Context
 import android.content.Intent
-import android.media.tv.TvContract.Programs.Genres.EDUCATION
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
@@ -30,8 +29,9 @@ import com.facebook.shimmer.ShimmerFrameLayout
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.R
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.NewsResponse
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.NewsResponse
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.ui.activity.bookmarks.BookmarksActivity
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.ui.activity.profile.ProfileActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -118,9 +118,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        intent = Intent(applicationContext, BookmarksActivity::class.java)
-        startActivity(intent)
-        return super.onOptionsItemSelected(item)
+        return when (item.itemId){
+            R.id.profile_menu -> {
+                intent = Intent(applicationContext, ProfileActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            R.id.bookmarks_menu -> {
+                intent = Intent(applicationContext, BookmarksActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            else -> true
+        }
     }
 
     private fun isNetworkAvailable(context: Context): Boolean {

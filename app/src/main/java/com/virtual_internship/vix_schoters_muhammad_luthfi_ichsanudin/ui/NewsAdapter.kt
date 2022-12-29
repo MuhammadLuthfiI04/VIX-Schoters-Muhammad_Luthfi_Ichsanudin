@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.NewsResponse
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.NewsResponse
 import com.squareup.picasso.Picasso
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.R
 import java.time.Duration

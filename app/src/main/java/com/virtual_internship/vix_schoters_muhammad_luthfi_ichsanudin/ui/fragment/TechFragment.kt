@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.ui.activity.main.MainActivity
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.NewsResponse
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.NewsResponse
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.R
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.ui.activity.detailnews.DetailNewsActivity
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.ui.NewsAdapter

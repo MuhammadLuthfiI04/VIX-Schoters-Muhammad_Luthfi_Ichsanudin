@@ -1,6 +1,6 @@
-package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api
+package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api.news
 
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.News
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.News
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

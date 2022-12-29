@@ -2,7 +2,7 @@ package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.room
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.NewsResponse
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.NewsResponse
 
 @Dao
 interface NewsDao {

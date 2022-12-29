@@ -3,9 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:icon="@drawable/ic_bookmarks"
-        app:showAsAction="always"
-        android:title="@string/bookmarks"
-        android:id="@+id/bookmarks_menu"/>
+        android:title="@string/more"
+        android:icon="@drawable/overflow_menu"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/profile_menu"
+                android:title="@string/profile"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/bookmarks_menu"
+                android:title="@string/bookmarks"
+                app:showAsAction="always" />
+        </menu>
+    </item>
 
 </menu>

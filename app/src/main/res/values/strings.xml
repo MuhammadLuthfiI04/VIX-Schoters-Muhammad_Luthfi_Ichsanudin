@@ -12,5 +12,11 @@
     <string name="more">More</string>
     <string name="bookmarks">Bookmarks</string>
     <string name="image_article">Image article</string>
+    <string name="profile">Profile</string>
+    <string name="location">Location</string>
+    <string name="blog">Blog</string>
+    <string name="company">Company</string>
+    <string name="link">Link</string>
+    <string name="image_profile">Image Profile</string>
 
 </resources>

@@ -1,9 +1,9 @@
-package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api
+package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.api.news
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object ApiConfig {
+object ApiConfigNews {
 
     private const val BASE_URL = "https://newsapi.org/v2/"
 
@@ -13,4 +13,5 @@ object ApiConfig {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
+
 }

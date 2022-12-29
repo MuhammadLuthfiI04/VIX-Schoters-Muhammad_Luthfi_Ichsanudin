@@ -19,4 +19,25 @@
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
 
     </style>
+
+    <style name="textTitle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="textUsername">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textName">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textUrl">
+        <item name="android:textColor">@color/blue</item>
+    </style>
 </resources>

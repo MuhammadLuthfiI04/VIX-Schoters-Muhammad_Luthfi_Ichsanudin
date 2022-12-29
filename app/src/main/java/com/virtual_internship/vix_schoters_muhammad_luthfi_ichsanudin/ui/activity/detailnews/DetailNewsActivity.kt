@@ -5,7 +5,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
-import android.speech.tts.Voice
 import android.view.Menu
 import android.view.MenuItem
 import android.webkit.WebChromeClient
@@ -17,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.ViewModelProvider
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.R
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.NewsResponse
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.NewsResponse
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.room.NewsViewModel
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.utils.Constants.NEWS_CONTENT
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.utils.Constants.NEWS_DESCRIPTION

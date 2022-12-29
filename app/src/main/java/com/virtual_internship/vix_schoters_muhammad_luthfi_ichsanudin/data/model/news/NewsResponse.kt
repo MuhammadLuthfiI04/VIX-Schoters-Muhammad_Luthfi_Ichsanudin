@@ -1,4 +1,4 @@
-package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model
+package com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

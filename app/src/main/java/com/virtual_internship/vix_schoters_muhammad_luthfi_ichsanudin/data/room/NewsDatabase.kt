@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.NewsResponse
+import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.data.model.news.NewsResponse
 import com.virtual_internship.vix_schoters_muhammad_luthfi_ichsanudin.utils.Constants.DATABASE_NAME
 
 @Database(entities = [NewsResponse::class], version = 1, exportSchema = false)
