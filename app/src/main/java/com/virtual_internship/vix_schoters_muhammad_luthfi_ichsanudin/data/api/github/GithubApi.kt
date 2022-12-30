@@ -7,7 +7,7 @@ import retrofit2.http.Headers
 import retrofit2.http.Path
 
 
-private const val API_KEY_GITHUB = "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"
+private const val API_KEY_GITHUB = "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"
 
 interface GithubApi {
 
